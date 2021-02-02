@@ -10,7 +10,6 @@
     />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="./scss/primary.css" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -22,5 +21,7 @@
       rel="stylesheet"
     />
     <link href="dist/lity.css" rel="stylesheet" />
+    <link href="./library/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="./scss/primary.css" />
   </head>
   <body>

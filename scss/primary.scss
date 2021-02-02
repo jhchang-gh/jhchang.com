@@ -15,9 +15,11 @@ $break-xs: 479.98px;
 //colors
 $bg-color:#fff;
 $black:#000;
+$offblack:#212529;
 $main-color:#012A49;
 $white:#fff;
 $offwhite:#F4F4F4;
+$orange:#e34900;
 
 /* general CSS blocks */
 
@@ -81,50 +83,96 @@ input,select,textarea{
     }
 }
 a{
+    color:$black;
     &:visited {
+        color:$black;
     }
     &:hover,&:visited:hover, &:visited:focus, &:focus, &:focus-within{
+        color:$black;
+    }
+    &.hover-left{
+        &:hover{
+            margin-left:10px;
+            text-decoration:none;
+        }
     }
 }
 img{
     max-width:100%;
 } 
 
+.wrapper{
+    overflow:hidden;
+}
+
 //HERO
 
 #hero{
 	height:100vh;
 	width:100%;
-	background:#e34900;
+	background:$black;
+    .loader{
+        @extend %absolute-center;
+        z-index:1;
+        color:white;
+        font-size:30px;
+        animation: rotation 3.5s infinite linear;
+    }
 }
 
-//parallax
+.panel{
+    background:$white;
+    height:20vh;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-content:center;
+    position:relative;
+    text-align:center;
+    left:100%;
+    z-index:2;
+    h1, p, #anim-logo{
+        align-self:center;
+    }
+    &.active{
+        left:0;
+    }
+    &.panel-text{
+    }
+}
+#anim-logo{
+    height:100px;
+    width:125px;
+    position:relative;
+    align-self:center;
+    &:before{
+        font-weight:900;
+        font-family: "Font Awesome 5 Free";
+        content:"\f109";
+        font-size:100px;
+        line-height:1;
+    }
+    p{
+        position:absolute;
+        left: 25px;
+        top: 12px;
+        width: 75px;
+        height: 50px;
+        overflow:hidden;
+        font-size:4px;
+        margin:0;
+        text-align:left;
+        padding:1px;
+        word-break:break-all;
+    }
+}
 
-.parallax{
-	.p-layer{
-		width:100%;
-		&.p-layer-1{
-			height:400px;
-			/*
-			height:400px;
-			background-image:url('./../images/sun.png');
-			background-position:center;
-			background-repeat:no-repeat;
-			background-size:400px;
-			*/
-			.sun{
-				width:400px;
-				height:400px;
-				border-radius:400px;
-				background:yellow;
-			}
-		}
-		&.p-layer-2{
-			height:600px;
-			background-image:url('./../images/ram.png');
-			background-position:bottom center;
-			background-repeat:no-repeat;
-			background-size:cover;
-		}
-	}
+//Animation cycles
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }

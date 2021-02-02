@@ -4,8 +4,6 @@
 
     <!-- SCRIPTS -->
     
-    <script src="js/typed.min.js"></script>
-    <script src="js/main.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -23,5 +21,6 @@
     ></script>
     <script src="https://kit.fontawesome.com/cb56b56e65.js"></script>
     <script src="dist/lity.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
