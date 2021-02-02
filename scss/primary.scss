@@ -1,0 +1,130 @@
+/*
+Primary SCSS File
+for jhchang.com
+Author: JH Chang
+*/
+
+//breakpoints - compatible with bootstrap
+//bootstrap actually prefers values to be slightly less than the breakpoint when using max-width instead of min-width
+$break-xxl: 1599.98px;
+$break-xl: 1199.98px;
+$break-lg: 991.98px;
+$break-md: 767.98px;
+$break-sm: 575.98px;
+$break-xs: 479.98px;
+//colors
+$bg-color:#fff;
+$black:#000;
+$main-color:#012A49;
+$white:#fff;
+$offwhite:#F4F4F4;
+
+/* general CSS blocks */
+
+%absolute-center{
+    position:absolute;
+    left:50%;
+    top:50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+%absolute-centerX{
+    position:absolute;
+    left:50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+%absolute-centerY{
+    position:absolute;
+    top:50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+%absolute-cancel{
+    top:initial;
+    bottom:initial;
+    left:initial; 
+    right:initial;
+    position:relative;
+    transform:initial;
+}
+%full-bg{
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center center;
+}
+
+// GENERAL
+*{
+    transition: all .6s ease, width 0s, z-index 0s, border 0s;
+}
+
+body{
+	/*
+    background-color:$bg-color;
+    font-size:$normal-text;
+    */
+}
+body, div, p, h1, h2, h3, h4, h5, a, span, button,ul,li, strong, small, label, input, select, textarea, button, option, ul li{
+	/*
+    color:$main-color;
+    font-family:$font-family;
+    line-height:1.3em;
+    */
+}
+ul{
+}
+input,select,textarea{
+    &::placeholder{
+    }
+}
+a{
+    &:visited {
+    }
+    &:hover,&:visited:hover, &:visited:focus, &:focus, &:focus-within{
+    }
+}
+img{
+    max-width:100%;
+} 
+
+//HERO
+
+#hero{
+	height:100vh;
+	width:100%;
+	background:#e34900;
+}
+
+//parallax
+
+.parallax{
+	.p-layer{
+		width:100%;
+		&.p-layer-1{
+			height:400px;
+			/*
+			height:400px;
+			background-image:url('./../images/sun.png');
+			background-position:center;
+			background-repeat:no-repeat;
+			background-size:400px;
+			*/
+			.sun{
+				width:400px;
+				height:400px;
+				border-radius:400px;
+				background:yellow;
+			}
+		}
+		&.p-layer-2{
+			height:600px;
+			background-image:url('./../images/ram.png');
+			background-position:bottom center;
+			background-repeat:no-repeat;
+			background-size:cover;
+		}
+	}
+}
