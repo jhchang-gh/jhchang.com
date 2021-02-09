@@ -7,9 +7,10 @@ include('header.php');
 
 	<div id="hero" class="">
 		<i class="loader fas fa-spinner"></i>
+
 		<div id="panel-group-1" class="panel-group">
-			<div class="panel">
-				<div id="contact-bar"></div>
+			<div class="panel contact-panel">
+				
 			</div>
 			<div class="panel">
 				<div id="anim-logo">
@@ -34,34 +35,53 @@ include('header.php');
 			</div>
 		</div>
 		<div id="panel-group-2" class="panel-group">
-			<div class="panel"></div>
+			<div class="contact-panel panel"></div>
 
-			<div class="sq-panel"></div>
-			<div class="sq-panel"></div>
-			<div class="sq-panel"></div>
-			<div class="sq-panel"></div>
-			<div class="sq-panel"></div>
+			<div class="panel">
+				<div class="sq-panel"><div class="white"></div><div class="black"></div></div>
+				<div class="sq-panel"><div class="white"></div><div class="black"></div></div>
+				<div class="sq-panel"><div class="white"></div><div class="black"></div></div>
+				<div class="sq-panel"><div class="white"></div><div class="black"></div></div>
+				<div class="sq-panel"><div class="white"></div><div class="black"></div></div>
+			</div>
 
-			<div class="sq-panel"></div>
-			<div class="sq-panel"></div>
-			<div class="sq-panel"></div>
-			<div class="sq-panel"></div>
-			<div class="sq-panel"></div>
+			<div class="panel">
+				<div class="sq-panel"><div class="white"></div><div class="black"></div></div>
+				<div class="sq-panel"><div class="white"></div><div class="black"></div></div>
+				<div class="sq-panel"><div class="white"></div><div class="black"></div></div>
+				<div class="sq-panel"><div class="white"></div><div class="black"></div></div>
+				<div class="sq-panel"><div class="white"></div><div class="black"></div></div>
+			</div>
 
-			<div class="sq-panel"></div>
-			<div class="sq-panel"></div>
-			<div class="sq-panel"></div>
-			<div class="sq-panel"></div>
-			<div class="sq-panel"></div>
+			<div class="panel">
+				<div class="sq-panel"><div class="white"></div><div class="black"></div></div>
+				<div class="sq-panel"><div class="white"></div><div class="black"></div></div>
+				<div class="sq-panel"><div class="white"></div><div class="black"></div></div>
+				<div class="sq-panel"><div class="white"></div><div class="black"></div></div>
+				<div class="sq-panel"><div class="white"></div><div class="black"></div></div>
+			</div>
 
-			<div class="sq-panel"></div>
-			<div class="sq-panel"></div>
-			<div class="sq-panel"></div>
-			<div class="sq-panel"></div>
-			<div class="sq-panel"></div>			
+			<div class="panel">
+				<div class="sq-panel"><div class="white"></div><div class="black"></div></div>
+				<div class="sq-panel"><div class="white"></div><div class="black"></div></div>
+				<div class="sq-panel"><div class="white"></div><div class="black"></div></div>
+				<div class="sq-panel"><div class="white"></div><div class="black"></div></div>
+				<div class="sq-panel"><div class="white"></div><div class="black"></div></div>			
+			</div>
 		</div>
 	</div>
 
+	<div id="contact-bar">
+		<div class="contact-group">
+			<a href="#contact-form" data-lity>Email</a>
+			<a href="https://github.com/jhchang-gh" target="_blank">Github</a>
+			<a href="https://www.linkedin.com/in/jeffrey-chang-bb7b095a/" target="_blank">LinkedIn</a>
+		</div>
+	</div>
+
+</div>
+<div id="contact-form" class="lity-hide">
+	<h1>Hey</h1>
 </div>
 <?php
 include('footer.php');

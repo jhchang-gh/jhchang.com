@@ -20,7 +20,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://kit.fontawesome.com/cb56b56e65.js"></script>
-    <script src="dist/lity.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

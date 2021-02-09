@@ -20,7 +20,9 @@
       href="https://fonts.googleapis.com/css?family=Cabin:400,400i,700&display=swap"
       rel="stylesheet"
     />
-    <link href="dist/lity.css" rel="stylesheet" />
+    <link href="./library/css/lity.css" rel="stylesheet">
+    <script src="./library/js/jquery.js"></script>
+    <script src="./library/js/lity.js"></script>
     <link href="./library/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="./scss/primary.css" />
   </head>
