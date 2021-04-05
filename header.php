@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Hi, I'm Jeff H Chang</title>
+    <title>Hi, I'm Jeff</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -16,10 +16,7 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <link
-      href="https://fonts.googleapis.com/css?family=Cabin:400,400i,700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet" type="text/css">
     <link href="./library/css/lity.css" rel="stylesheet">
     <script src="./library/js/jquery.js"></script>
     <script src="./library/js/lity.js"></script>

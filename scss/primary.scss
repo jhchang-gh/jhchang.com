@@ -20,6 +20,7 @@ $main-color:#012A49;
 $white:#fff;
 $offwhite:#F4F4F4;
 $orange:#e34900;
+$font-family:"Inconsolata",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 
 /* general CSS blocks */
 
@@ -65,6 +66,15 @@ $orange:#e34900;
     height:100%;
 }
 
+//transition timing for skill list
+@mixin transition {
+  @for $i from 1 through 10 {
+    &:nth-child(#{$i}) {
+      transition: all .3s #{$i * .2}s ease-in;
+    }
+  }
+}
+
 // GENERAL
 *{
     transition: all .6s ease, width 0s, z-index 0s, border 0s;
@@ -76,7 +86,7 @@ body{
     font-size:$normal-text;
     */
     max-width:100%;
-    overflow:hidden;
+    height:auto;
 }
 body, div, p, h1, h2, h3, h4, h5, a, span, button,ul,li, strong, small, label, input, select, textarea, button, option, ul li{
 	/*
@@ -84,6 +94,8 @@ body, div, p, h1, h2, h3, h4, h5, a, span, button,ul,li, strong, small, label, i
     font-family:$font-family;
     line-height:1.3em;
     */
+    font-family:$font-family;
+    color:$offwhite
 }
 ul{
 }
@@ -92,12 +104,12 @@ input,select,textarea{
     }
 }
 a{
-    color:$black;
+    color:$white;
     &:visited {
-        color:$black;
+        color:$white;
     }
     &:hover,&:visited:hover, &:visited:focus, &:focus, &:focus-within{
-        color:$black;
+        color:$white;
     }
     &.hover-left{
         &:hover{
@@ -113,12 +125,40 @@ img{
 .wrapper{
     overflow:hidden;
 }
+.margin-center{
+    margin:0 auto;
+}
+.shrink-container{
+    max-width:640px;
+    @media screen and (max-width:$break-md){
+        max-width:540px;
+    }
+}
+
+//Basic divs
+
+.jh-block{
+    background-color:$offblack;
+    padding:45px 0;
+    .container{
+        padding-left:30px;
+        padding-right:30px;
+    }
+}
+.rounded-img{
+    width:90%;
+    height:90%;
+    overflow:hidden;
+    border-radius:360px;
+    max-width:360px;
+    max-height:360px;
+}
 
 //CONTACT
 
 #contact-bar{
     display:flex;
-    height:20vh;
+    height:45px;
     width:100%;
     opacity:0;
     justify-content:center;
@@ -128,6 +168,7 @@ img{
     left:0;
     text-align:center;
     z-index:5;
+    background:$white;
 
     .contact-group{
         display:flex;
@@ -167,7 +208,7 @@ img{
     overflow:hidden;
 }
 .panel{
-    background:$white;
+    background:$main-color;
     height:20vh;
     width:100%;
     display:flex;
@@ -177,6 +218,7 @@ img{
     text-align:center;
     left:100%;
     z-index:2;
+    padding:0 15px;
     h1, p, #anim-logo{
         align-self:center;
     }
@@ -234,6 +276,83 @@ img{
         text-align:left;
         padding:1px;
         word-break:break-all;
+    }
+}
+
+//About Me
+
+#about-me{
+    .rounded-img{
+        margin-bottom:30px;
+    }
+    p, ul, li, h3{
+        color:$offwhite;
+    }
+    #skill-list{
+        ul{
+            padding:0;
+            list-style:none;
+            margin-left:-15px;
+            margin-right:-15px;
+            li{
+                display:inline-block;
+                margin: 5px 15px;
+                padding:3px 5px;
+                background:$black;
+                cursor:default;
+                opacity:0;
+                @include transition();
+            }
+
+        }
+    }
+}
+
+//Portfolio
+#portfolio{
+    background:$main-color;
+    p, ul, li, h3,a{
+        color:$offwhite;
+    }
+    #portfolio-list{
+        display:grid;
+        grid-template-columns:1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        margin-top:30px;
+        .port-item{
+            background-color:$black;
+            background-size:cover;
+            background-position:center center;
+            padding-top:65%;
+            position:relative;
+            .port-title{
+                position:absolute;
+                background: rgba(0,0,0,.6);
+                text-align:center;
+                padding:3px 5px;
+                bottom:0;
+                left:0;
+                width:100%;
+                a{
+
+                }
+            }
+            &.port-text{
+                h3{
+                    @extend %absolute-center;
+                }
+            }
+        }
+        @media only screen and (max-width:$break-lg){
+            grid-template-columns:1fr 1fr;
+            grid-template-rows:1fr 1fr 1fr 1fr 1fr;
+            .port-item{
+                padding-top:35%;
+            }
+            .port-text{
+                grid-column:1 / 3;
+            }
+        }
     }
 }
 
