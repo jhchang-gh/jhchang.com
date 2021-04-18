@@ -1,5 +1,5 @@
     <div class="footer">
-      <small>&copy;2018-<?php echo date("Y"); ?> Jeff H Chang</small>
+      <small>&copy;2016-<?php echo date("Y"); ?> Jeff H Chang</small>
     </div>
 
     <!-- SCRIPTS -->
