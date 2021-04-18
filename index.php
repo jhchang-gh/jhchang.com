@@ -117,25 +117,25 @@ include('header.php');
 							<div class="port-title"><a href="https://www.onedrop-media.com" target="_blank">One Drop Media</a></div>
 						</div>
 						<div class="port-item" style="background-image:url(./images/folio-invictus.jpg)">
-							<div class="port-title"><a href="https://invictusproject.org" target="_blank">The Invictus Project</a></div>
+							<div class="port-title"><a href="https://www.invictusproject.org/" target="_blank">The Invictus Project</a></div>
 						</div>
 						<div class="port-item" style="background-image:url(./images/folio-ampepi.jpg)">
-							<div class="port-title"><a href="https://alvarezandmarsal-pepi.com" target="_blank">Alvarez & Marsal PEPI</a></div>
+							<div class="port-title"><a href="https://www.alvarezandmarsal-pepi.com/" target="_blank">Alvarez & Marsal PEPI</a></div>
 						</div>
 						<div class="port-item" style="background-image:url(./images/folio-hogshead.jpg)">
-							<div class="port-title"><a href="https://hogsheadgolfclub.com" target="_blank">Hogshead Golf Club</a></div>
+							<div class="port-title"><a href="https://www.hogsheadgolfclub.com/" target="_blank">Hogshead Golf Club</a></div>
 						</div>
 						<div class="port-item" style="background-image:url(./images/folio-victory.jpg)">
-							<div class="port-title"><a href="https://victoryma.com" target="_blank">Victory Martial Arts</a></div>
+							<div class="port-title"><a href="https://www.victoryma.com/" target="_blank">Victory Martial Arts</a></div>
 						</div>
 						<div class="port-item" style="background-image:url(./images/folio-vasper.jpg)">
 							<div class="port-title"><a href="https://vasper.com" target="_blank">Vasper Systems</a></div>
 						</div>
 						<div class="port-item" style="background-image:url(./images/folio-amcap.jpg)">
-							<div class="port-title"><a href="https://a-mcapital.com.com" target="_blank">A&M Capital</a></div>
+							<div class="port-title"><a href="https://www.a-mcapital.com/" target="_blank">A&M Capital</a></div>
 						</div>
 						<div class="port-item" style="background-image:url(./images/folio-tog.jpg)">
-							<div class="port-title"><a href="https://togrp.com" target="_blank">The One Group</a></div>
+							<div class="port-title"><a href="https://togrp.com/main-home/" target="_blank">The One Group</a></div>
 						</div>
 						<div class="port-item port-text">
 							<h3>And many more...</h3>
